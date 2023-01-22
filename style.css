@@ -1,54 +1,83 @@
-.text-h1{
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(72, 153, 219);
+}
+.calculator{  
+    width: 350px;
+    height: 500px;
+    background-color: rgb(231, 236, 240);
+    box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.1),
+    -15px -15px 20px #fffb;
     font-family: 'Poppins', sans-serif;
+}
+.calc-input{
+    width: 100%;
+    padding: 40px ;
+    text-align: right;
+    border: none;
+    outline: none;
+    font-size: 20px;
+}
+
+.mobi{
+    /* margin-top: 10px; */
     text-align: center;
 }
-.container{
-    border: 3px solid white;
-    background-color: black;
-    border-radius: 15px;
-    margin: auto;
-    width: 30%;
-    height: 65vh;
+#exp{
+    background-color: #51bbd6;
+    color: white;
+    width: 85px;
 }
-.clear{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.buttons-ope{
+    padding: 20px 10px;
+}
+.buttons-ope button{
+    cursor: pointer;
+    width: 65px;
+    height: 50px;
+    margin: 5px 5px;
+    border: none;
+    border-radius: 10px;
+    color: #2a89d6;
+    font-weight: bold;
+    font-size: 1.2rem;
     
-}
-.clear button{
-    padding: 15px 50px;
-    width: 140px;
-    margin-top: 5px;
-    border: 2px solid white;
-    border-radius: 5px;
-    cursor: pointer;
-    background-color: rgb(219, 18, 18);
-}
-
-
-
-.row{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.row button{
-    padding: 20px;
-    /* font-size: 20px; */
-    margin: 8px 3px;
-    border: 2px solid white;
-    border-radius: 5px;
-    cursor: pointer;
-    background-color: rgb(82, 226, 82);
-
+    
+    
 
 }
-
-.row input{
-    padding: 10px 30px;
-    border: 2px solid black;
-    border-radius:5px ;
-    font-family: 'Poppins', sans-serif;
-    margin-top: 10px;
+#equal{
+    background-color: #2196f3;
+    color: white;
+    /* border-radius: 5px; */
+}
+#clear{
+    /* color: #ff4333; */
+    background-color: #ff4333 ;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    width: 120px;
+}
+#plus{
+    
+    background-color: #31a935 ;
+    color: #fff;
+    height: 80px;
+}
+@media only screen and (max-width:334px) {
+    .calculator{
+        height: 600px;
+    }
+    .btn{
+        width: 100%;
+    }
 }
