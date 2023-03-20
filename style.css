@@ -65,7 +65,7 @@ body{
     font-size: 20px;
     font-weight: bold;
     color: #fff;
-    width: 120px;
+    width: 65px;
     font-family: 'Courier New', Courier, monospace;
 }
 #plus{
@@ -73,6 +73,12 @@ body{
     background-color: #31a935 ;
     color: #fff;
     height: 80px;
+}
+#del{
+    background-color: rgb(147, 228, 228);
+    color: #fff;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 26px;
 }
 @media only screen and (max-width:334px) {
     .calculator{
